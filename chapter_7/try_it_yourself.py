@@ -102,5 +102,57 @@ while tickets_remaining > 0:
         print("Your ticket is $15")
         tickets_remaining-=1
 #7-7 Infinity 
-while True: 
-    print("press CTRL+C to close")
+# while True: 
+#     print("press CTRL+C to close")
+    
+    
+#7-8
+sandwich_orders = ['peperoni', 'tuna', 'ham & cheese']
+finished_sandwiches = []
+
+while sandwich_orders:
+    order = sandwich_orders.pop()
+    print(f"I made your {order} sandwitch")
+    finished_sandwiches.append(order)
+
+print("made sandwitches")
+for sandwitch in finished_sandwiches:
+    print(f"\t{sandwitch}")
+
+#7-9 No Pastrami
+sandwich_orders = ['pastrami', 'peperoni', 'pastrami', 
+                'tuna', 'pastrami', 'ham & cheese', 'pastrami']
+finished_sandwiches = []
+
+print("\nThe deli has out of pastrami")
+
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+while sandwich_orders:
+    order = sandwich_orders.pop()
+    print(f"I made your {order} sandwitch")
+    finished_sandwiches.append(order)
+
+print("made sandwitches")
+for sandwitch in finished_sandwiches:
+    print(f"\t{sandwitch}")
+    
+#7-10 Dream vacation
+places = {}
+prompt = 'If you would visit one place of the world, where would you go? '
+
+flag = True
+
+while flag:
+    name = input("What's your name? ")
+    place = input(prompt)
+    places[name] = place
+    
+    repeat = input("would you like add another person data? (Yes/No) ")
+    if repeat == 'no':
+        flag=False
+
+print("There are the results from the poll: ")
+for name, place in places.items():
+    print(f"\t{name.title()}: {place.title()}")
