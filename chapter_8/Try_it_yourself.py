@@ -8,12 +8,14 @@ def display_message():
 
 #8-2 Favorite Book
 def favorite_books(title):
+    """Display a book as parameter"""
     print(f"One of my favorite books is {title.title()}")
     
 # print("the little prince")
 
 #8-3 T-Shirt
 def make_shirt(text, size):
+    """display a text with 2 parameters"""
     print(f"you order a {size} size, with the text: '{text}'")
 
 # make_shirt("Hello world", "Large")
@@ -21,6 +23,7 @@ def make_shirt(text, size):
 
 #8-4 Large Shirts
 def make_shirt(text="I love Python", size='Large'):
+    """Display a text using 2 keyword arguments with default values"""
     print(f"you order a {size} size, with the text: '{text}'")
 
 # make_shirt()
@@ -30,6 +33,7 @@ def make_shirt(text="I love Python", size='Large'):
 
 #8-5 Cities
 def describe_city(city, country='japan'):
+    """Display a phrase using a positional parameter and a keyword argument"""
     print(f'{city.title()} is in {country.title()}')
 
 describe_city('tokyo')
