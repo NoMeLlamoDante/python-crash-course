@@ -61,7 +61,8 @@ def make_album(artist, title, songs=None):
 # print(make_album('the beetles', "Sgt. Pepper's Lonely Hearts Club Band"))
 
 #8-8 User Albums
-while True:
+while False:
+# while True:
     print("Let's add album info:")
     print("(enter 'q' to quit)")
     
@@ -112,8 +113,41 @@ def send_messages(send_messages,sent_messages):
 # print(messages)
 
 #8-11 Archived messages
-send_messages(messages[:], sent_messages)
-print("Sent messages:")
-show_messages(sent_messages)
-print("Sending messages")
-print(messages)
+# send_messages(messages[:], sent_messages)
+# print("Sent messages:")
+# show_messages(sent_messages)
+# print("Sending messages")
+# print(messages)
+
+#8-12 Sandwiches
+def make_sandwitch(*ingredients):
+    return ingredients
+
+# print(make_sandwitch('ham', 'mayo'))
+# print(make_sandwitch('ham', 'cheese', 'mayo'))
+# print(make_sandwitch('tuna'))
+
+#8-13 User profile
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+user_profile = build_profile('Edgar', 'Zarate',
+                location='Centro', 
+                field='programming',
+                favorite_food='chilaquiles')
+# print(user_profile)
+
+#8-14 Cars
+def make_car(manufacturer, model, **data):
+    data['manufacturer'] = manufacturer
+    data['model'] = model
+    return data
+car_1 = make_car("subaru", "outback", color="blue", tow_package=True)
+car_2 = make_car("Toyota", "yaris gr", color="white", doors=5)
+car_3 = make_car("Mustang", "match-e", color="black", type='Electric')
+
+print(f"Car 1: {car_1}")
+print(f"Car 2: {car_2}")
+print(f"Car 3: {car_3}")
