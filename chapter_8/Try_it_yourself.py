@@ -61,8 +61,6 @@ def make_album(artist, title, songs=None):
 # print(make_album('the beetles', "Sgt. Pepper's Lonely Hearts Club Band"))
 
 #8-8 User Albums
-
-
 while True:
     print("Let's add album info:")
     print("(enter 'q' to quit)")
@@ -89,3 +87,33 @@ while True:
         album = make_album(artist, title)
     
     print(album)
+    
+#8-9 Messages
+messages = ['please call me back', 'you have a voic mail', 'your code is 2120']
+
+def show_messages(messages):
+    for message in messages:
+        print(f"message: {message}")
+# show_messages(messages)
+
+#8-10 Sending messages
+messages = ['please call me back', 'hello', 'see you next week']
+sent_messages = []
+def send_messages(send_messages,sent_messages):
+    while send_messages:
+        current_message = send_messages.pop()
+        print(f"Sending message: {current_message}")
+        sent_messages.append(current_message)
+
+# send_messages(messages, sent_messages)
+# print("Sent messages:")
+# show_messages(sent_messages)
+# print("Sending messages")
+# print(messages)
+
+#8-11 Archived messages
+send_messages(messages[:], sent_messages)
+print("Sent messages:")
+show_messages(sent_messages)
+print("Sending messages")
+print(messages)
