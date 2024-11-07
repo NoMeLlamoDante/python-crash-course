@@ -148,6 +148,21 @@ car_1 = make_car("subaru", "outback", color="blue", tow_package=True)
 car_2 = make_car("Toyota", "yaris gr", color="white", doors=5)
 car_3 = make_car("Mustang", "match-e", color="black", type='Electric')
 
-print(f"Car 1: {car_1}")
-print(f"Car 2: {car_2}")
-print(f"Car 3: {car_3}")
+# print(f"Car 1: {car_1}")
+# print(f"Car 2: {car_2}")
+# print(f"Car 3: {car_3}")
+
+#8-15
+#Printing models modification
+#   printing_functions.py
+#   printing_model.py
+
+#8-16
+#Greeter to:
+#   Greeter_functions.py
+#   Greeter_model.py
+
+#8-17 Styling Functions
+#   formatted_name.py
+#   person.py
+#   user_profile.py
