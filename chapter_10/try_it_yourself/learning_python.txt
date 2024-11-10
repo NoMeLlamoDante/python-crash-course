@@ -1,0 +1,7 @@
+in the book of python crash course, i've learning to make programs 
+use variables, arithmetic operations with there, define functions, 
+the diferences between arguments and parameters, boolean operations 
+diferent ways to solve problems using loops, store information in 
+dictionaries, lists and tuples, when use them and why. 
+Now i'm learning about classes, how code them, methods and inheritance, 
+make imports form clases and other types of archives. 
